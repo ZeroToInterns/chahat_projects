@@ -1,0 +1,25 @@
+
+public class Circle {
+
+	private int radius;
+	private String name;
+	
+	public Circle( int radius)
+	{
+		this.radius = radius;
+	}
+	public Circle(String name)
+	{
+		this.name = name;
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		Circle myCircle = new Circle(10);
+		System.out.println(myCircle.radius);
+		
+		System.out.println(myCircle.name);
+		
+	}
+}

@@ -1,0 +1,10 @@
+
+public class Tester {
+
+	public static void main (String[] args)
+	{
+		ControlFlowPractice h1 = new ControlFlowPractice();
+		
+		System.out.println(h1.findLetterAt( "W" , "helloWorld"));
+	}
+}
