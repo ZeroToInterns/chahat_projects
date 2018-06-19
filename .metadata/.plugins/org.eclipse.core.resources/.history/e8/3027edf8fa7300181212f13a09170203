@@ -14,7 +14,7 @@ public class ArrayListPractice
 	
 	public static ArrayList addSecondToLast(String color , ArrayList<String>colorList)
 	{
-		colorList.add(colorList.size()-2,color);
+		colorList.add(1,color);
 		return colorList;
 	}
 	
@@ -36,15 +36,26 @@ public class ArrayListPractice
 	public static void main(String[] args)
 	{
 		ArrayList <String> colors = new ArrayList<String>();
-
+//		colors.add("Blue");
+//		colors.add("green");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		colors.add("red");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		colors.add("Blue");
+//		
 		
 		Scanner sc = new Scanner(System.in);
 	    int count = 0;
 	    System.out.println("enter 10 colors: ");
 		while(count < 10 )
 		{
-			colors.add(sc.nextLine());
-			count++;
+		colors.add(sc.nextLine());
+		count++;
 		}
 		
 		
@@ -61,5 +72,11 @@ public class ArrayListPractice
 	    System.out.println("enter the color to be searched");
 	    String searchColor = sc.nextLine();
 	    System.out.println(countColor(searchColor, colors));
+		
+	
+	
 	}
+	
+	
+	
 }
