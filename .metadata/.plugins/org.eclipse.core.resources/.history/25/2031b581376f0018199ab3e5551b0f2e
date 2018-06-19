@@ -1,0 +1,62 @@
+
+public class SodaCan implements Comparable {
+
+private double height;
+private double radius;
+private double currContent;
+public static final double cubicInchToOunces = 0.554112554;
+
+public SodaCan()
+{
+	height = 4.704;
+	radius = 1.2109;
+	currContent = Math.PI * radius * radius * height * cubicInchToOunces;
+}
+
+public SodaCan( double height , double radius)
+{
+	this.height = height;
+	this.radius = radius;
+	currContent = Math.PI * radius * radius * height * cubicInchToOunces; 
+}
+
+public double getRadius()
+{
+	return radius;
+}
+
+public double getHeight()
+{
+	return height;
+}
+
+public void drink( double fluidOunces)
+{
+	currContent = currContent - fluidOunces;
+}
+
+public double getContents()
+{
+	return currContent;
+}
+
+@Override
+public int compareTo(Object o)
+{ 
+	SodaCan otherSoda = (SodaCan) o;
+	if(this.getContents() > otherSoda.getContents())
+	{
+		return 1;
+	}
+	else if(this.getContents() < otherSoda.getContents())
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+	
+}
+
+}

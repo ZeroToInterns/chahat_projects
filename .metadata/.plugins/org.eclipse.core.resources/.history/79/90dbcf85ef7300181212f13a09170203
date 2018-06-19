@@ -1,0 +1,73 @@
+package ArrayListPractice;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayListPractice 
+{
+	
+	public ArrayList insertFirst(String color, ArrayList<String>colorList)
+	{
+	  colorList.add(0,color);
+	  return colorList;
+	}
+	
+	public ArrayList addSecondToLast(String color , ArrayList<String>colorList)
+	{
+		colorList.add(1,color);
+		return colorList;
+	}
+	
+	public int countColor(String color, ArrayList<String> colorList)
+	{   int count = 0;
+		for( int i = 0; i < colorList.size(); i++)
+		{
+			if(color.equals(colorList.get(i)));
+			{
+				count++;
+			}
+		
+		}
+		return count;
+	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+		ArrayList <String> colors = new ArrayList<String>();
+	
+		Scanner sc = new Scanner(System.in);
+	    int count = 0;
+		while(sc.hasNextLine() && count < 10 )
+		{
+		System.out.println("enter the color");
+		colors.add(sc.nextLine());
+		count++;
+		}
+		
+		ArrayListPractice object = new ArrayListPractice();
+		
+		System.out.println("enter the color to be entered at first");
+		
+		String firstColor = sc.nextLine();
+		colors = object.insertFirst(firstColor, colors);
+		System.out.println(colors);		
+		
+        System.out.println("enter the color to be entered at first");
+		
+		String secondColor = sc.nextLine();
+		colors = object.insertFirst(secondColor, colors);
+		System.out.println(colors);	
+		
+	    System.out.println("enter the color to be searched");
+	    String searchColor = sc.nextLine();
+	    System.out.println(object.countColor(searchColor, colors));
+		
+	
+	
+	}
+	
+	
+	
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class InputApplication {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter a your favorite dessert: ");
+		String dish = in.nextLine();
+		System.out.println(dish.charAt(dish.length()-1));
+		
+		System.out.print("Enter a double: ");
+		double doubleNumber = in.nextDouble();
+		System.out.println(doubleNumber);
+		
+		System.out.print("Enter an integer: ");
+		int intNumber = in.nextInt();
+		System.out.println(intNumber);
+		
+		System.out.println(doubleNumber * intNumber);
+		int newNumber = (int)doubleNumber * intNumber;
+		System.out.println(newNumber);
+		 
+		
+		
+		
+		
+	}
+
+	
+}
