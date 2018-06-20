@@ -1,0 +1,26 @@
+
+public class BattleShip {
+ private boolean[][] grid;
+ 
+ public BattleShip()
+ {
+	 grid = new boolean[10][10];
+ }
+ // places one unit fishing boat
+ public void placeFishingBoat(int x, int y)
+ {
+	 grid[x][y] = true;
+ }
+ 
+ public void printGrid()
+ {
+	 for(int i = 0; i < grid.length ; i++)
+	 {
+		 for( int j = 0 ; j < grid[0].length ; j++)
+		 {
+			 System.out.print(grid[i][j]);
+		 }
+		 System.out.println();
+	 }
+ }
+}

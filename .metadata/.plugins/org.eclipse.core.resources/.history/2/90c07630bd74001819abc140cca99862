@@ -1,0 +1,14 @@
+
+public class BattleShip {
+ private boolean[][] grid;
+ 
+ public BattleShip()
+ {
+	 grid = new boolean[10][10];
+ }
+ 
+ public void placeFishingBoat(int x, int y)
+ {
+	 grid[x][y] = true;
+ }
+}

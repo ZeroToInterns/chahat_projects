@@ -1,0 +1,12 @@
+
+public class Testerbattle {
+
+	public static void main(String[] args)
+	{
+		BattleShip game1 = new BattleShip();
+		game1.placeFishingBoat(5, 6);
+		game1.placeCarrierBoat(3, 2, "horizontal");
+        game1.printGrid();		
+	}
+
+}
