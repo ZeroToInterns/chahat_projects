@@ -1,0 +1,6 @@
+Account ID: 1 Balance: 1550.0 Type: Checking
+Transcaction logs: 
+Amount: $50.0 Time :34min Type: Transfer
+Amount: $50.0 Time :34min Type: Transfer
+Amount: $2200.0 Time :34min Type: cash
+Amount: $700.0 Time :34min Type: Transfer
